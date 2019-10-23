@@ -1,0 +1,30 @@
+version: "3.5"
+
+services:
+  redis:
+    image: redis
+    container_name: starter-ts-express_redis
+    command: redis-server
+    expose:
+      - "6379"
+    networks:
+      starter-ts-express:
+
+  node:
+    image: node:10.16-alpine
+    container_name: starter-ts-express_server
+    user: node
+    volumes:
+      - ./app:/usr/app
+    working_dir: /usr/app
+    ports:
+      - "1337:1337"
+    command: ["npm", "start"]
+    links:
+      - redis
+    networks:
+      starter-ts-express:
+
+networks:
+  starter-ts-express:
+    name: starter-ts-express_network

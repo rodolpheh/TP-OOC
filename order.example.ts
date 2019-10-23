@@ -1,0 +1,66 @@
+const orderExample: object = {
+  id: 1,
+  createdAt: new Date(),
+  packages: [
+    {
+      length: {
+        unit: 'cm',
+        value: 85
+      },
+      width: {
+        unit: 'm',
+        value: 1.2
+      },
+      height: {
+        unit: 'cm',
+        value: 12
+      },
+      weight: {
+        unit: 'kg',
+        value: 2.75
+      },
+      products: [
+        {
+          quantity: 2,
+          label: 'Chiffon magique',
+          ean: '5920123412345'
+        },
+      ],
+    },
+  ],
+  contact: {
+    firstname: 'André',
+    lastname: 'Martel',
+    phone: '0600000000',
+    mail: 'andre.martel@niji.fr',
+    billingAddress: {
+      postalCode: '59000',
+      city: 'Lille',
+      addressLine1: '42 rue paumée',
+      addressLine2: '',
+    },
+    deliveryAddress: {
+      postalCode: '59000',
+      city: 'Lille',
+      addressLine1: '42 rue paumée',
+      addressLine2: '',
+    },
+  },
+  carrier: {
+    name: 'Chronopost',
+    contact: {
+      firstname: 'Michel',
+      lastname: 'Patulacci',
+      phone: '0600000000',
+      mail: 'michelBGdu59@chronopost.fr',
+      headOfficeAddress: {
+        postalCode: '75000',
+        city: 'Paris',
+        addressLine1: '1 avenue des Champs Elysées',
+        addressLine2: '',
+      },
+    },
+  },
+}
+
+export default orderExample;
