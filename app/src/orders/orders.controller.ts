@@ -16,7 +16,10 @@ import {
   delAsync, getAsync, setAsync,
 } from '../../utils/storage'
 
-import Order from './Order'
+import {
+  IOrder,
+  Order,
+} from './Order'
 
 export default class OrdersController {
   public path: string = '/orders'
@@ -45,7 +48,7 @@ export default class OrdersController {
    */
   public getOne = async (request: Request, response: Response): Promise<void> => {
     this.findOrder(Number(request.params.id))
-      .then((value: Order): Response => response.json(value))
+      .then((value: IOrder): Response => response.json(value))
       .catch((): Response => response.sendStatus(404))
   }
 
@@ -61,15 +64,15 @@ export default class OrdersController {
       // We parse the data
       .then((value: string) => JSON.parse(value))
       // We then proceed to build and add the object to the array
-      .then((orders: Order[]) => {
+      .then((orders: IOrder[]) => {
         // We create an empty array if it doesn't exist yet
         orders = orders || []
         // We sort the orders by id so we can easily get the latest id
-        orders = orders.sort((a: Order, b: Order) => a.id - b.id)
+        orders = orders.sort((a: IOrder, b: IOrder) => a.id - b.id)
         // We add a new order to the array
         orders = orders.concat(new Order(
           orders.length > 0 ? orders[orders.length - 1].id + 1 : 1,
-          request.body.contact,
+          request.body as IOrder,
         ))
         // We send the data to the database
         this.send(
@@ -114,19 +117,22 @@ export default class OrdersController {
     // We get the data
     getAsync('orders')
       // We parse the data
-      .then((value: string): Order[] => JSON.parse(value))
+      .then((value: string): IOrder[] => JSON.parse(value))
       // We proceed to the removal from the list
-      .then((orders: Order[]) => {
+      .then((orders: IOrder[]) => {
         // First find the index of the searched entry
         const index: number = orders.findIndex(
-          (order: Order) => order.id === Number(request.params.id),
+          (order: IOrder) => order.id === Number(request.params.id),
         )
         // Change the data
         if (index !== -1) {
+          // Clean the data from the id and the date if supplied
+          delete request.body.id
+          delete request.body.createdAt
           // We change the contact data if it is supplied, otherwise we
           // return a 204 (No content)
-          if ('contact' in request.body) {
-            orders[index] = new Order(orders[index].id, request.body.contact)
+          if (Object.keys(request.body).length > 0) {
+            orders[index] = new Order(orders[index].id, request.body as IOrder)
           } else {
             // express response objects will not forward a response body if the response
             // status code is 204 No Content. As such, it will not show up in Postman
@@ -138,7 +144,7 @@ export default class OrdersController {
         return Promise.reject(404)
       })
       // We save the data
-      .then((orders: Order[]) => this.send(orders, response, 200))
+      .then((orders: IOrder[]) => this.send(orders, response, 200))
       // We return the HTTP status code set up during the rejection
       .catch((status: number) => response.sendStatus(status))
   }
@@ -164,12 +170,12 @@ export default class OrdersController {
     // We get the data
     getAsync('orders')
       // We parse the data
-      .then((value: string): Order[] => JSON.parse(value))
+      .then((value: string): IOrder[] => JSON.parse(value))
       // We proceed to the removal from the list
-      .then((orders: Order[]) => {
+      .then((orders: IOrder[]) => {
         // First find the index of the searched entry
         const index: number = orders.findIndex(
-          (order: Order) => order.id === Number(request.params.id),
+          (order: IOrder) => order.id === Number(request.params.id),
         )
         // Remove the entry from the array
         if (index !== -1) {
@@ -180,7 +186,7 @@ export default class OrdersController {
         return Promise.reject()
       })
       // We save the data
-      .then((orders: Order[]) => this.send(orders, response, 200))
+      .then((orders: IOrder[]) => this.send(orders, response, 200))
       // We return an error 404 if the entry was not found
       .catch(() => response.sendStatus(404))
   }
@@ -216,9 +222,9 @@ export default class OrdersController {
    * @param   id
    * @returns
    */
-  private findOrder = async (id: number): Promise<Order> => {
+  private findOrder = async (id: number): Promise<IOrder> => {
     return new Promise((
-        resolve: (value?: Order | PromiseLike<Order>) => void,
+        resolve: (value?: IOrder | PromiseLike<IOrder>) => void,
         reject: (reason?: any) => void,
       ): void => {
         // We load the orders
@@ -226,11 +232,11 @@ export default class OrdersController {
           // We parse them
           .then((value: string) => JSON.parse(value))
           // We reject it if it's empty, otherwise we search our order
-          .then((value: Order[]) => (
-            value ? value.find((item: Order) => item.id === Number(id)) : reject()
+          .then((value: IOrder[]) => (
+            value ? value.find((item: IOrder) => item.id === Number(id)) : reject()
           ))
           // We reject if it doesn't exist, otherwise we resolve
-          .then((value: Order) => value ? resolve(value) : reject())
+          .then((value: IOrder) => value ? resolve(value) : reject())
       })
   }
 
@@ -243,7 +249,7 @@ export default class OrdersController {
    * @returns
    */
   private send = async (
-      orders: Order[],
+      orders: IOrder[],
       response: Response,
       status: number,
       locationHeader?: string,

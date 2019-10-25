@@ -13,6 +13,7 @@ This is a practical work for the class of Object-Oriented Concepts at ISEN Lille
 ## Answers
 
 1. For this exercise, I chose to write a RESTful-compliant API. It is a little bit dirty but commented. I'll leave more room for improvements in the next exercises.
+2. To compose this model, we need to respect the interface segregation principle. We can describe the data with a bunch of interfaces nested into each other.
 
 ---
 
