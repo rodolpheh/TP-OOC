@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>OrdersController | starter-ts-express</title>
+	<title>OrderServer | starter-ts-express</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,13 +56,13 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_src_orders_orders_controller_.html">&quot;src/orders/orders.controller&quot;</a>
+					<a href="../modules/_src_orders_orderserver_.html">&quot;src/orders/OrderServer&quot;</a>
 				</li>
 				<li>
-					<a href="_src_orders_orders_controller_.orderscontroller.html">OrdersController</a>
+					<a href="_src_orders_orderserver_.orderserver.html">OrderServer</a>
 				</li>
 			</ul>
-			<h1>Class OrdersController</h1>
+			<h1>Class OrderServer</h1>
 		</div>
 	</div>
 </header>
@@ -73,90 +73,48 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">OrdersController</span>
+						<span class="target">OrderServer</span>
 					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel">
+				<h3>Implements</h3>
+				<ul class="tsd-hierarchy">
+					<li><a href="../interfaces/_src_orders_iorderserver_.iorderserver.html" class="tsd-signature-type">IOrderServer</a></li>
 				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
-						<section class="tsd-index-section ">
-							<h3>Constructors</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="_src_orders_orders_controller_.orderscontroller.html#constructor" class="tsd-kind-icon">constructor</a></li>
-							</ul>
-						</section>
-						<section class="tsd-index-section ">
+						<section class="tsd-index-section tsd-is-private tsd-is-private-protected">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_src_orders_orders_controller_.orderscontroller.html#orderserver" class="tsd-kind-icon">order<wbr>Server</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_src_orders_orders_controller_.orderscontroller.html#path" class="tsd-kind-icon">path</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_src_orders_orders_controller_.orderscontroller.html#router" class="tsd-kind-icon">router</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_src_orders_orderserver_.orderserver.html#storageaccess" class="tsd-kind-icon">storage<wbr>Access</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_src_orders_orders_controller_.orderscontroller.html#create" class="tsd-kind-icon">create</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_src_orders_orders_controller_.orderscontroller.html#delete" class="tsd-kind-icon">delete</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_src_orders_orders_controller_.orderscontroller.html#initializeroutes" class="tsd-kind-icon">initialize<wbr>Routes</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_src_orders_orders_controller_.orderscontroller.html#read" class="tsd-kind-icon">read</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_src_orders_orders_controller_.orderscontroller.html#update" class="tsd-kind-icon">update</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_src_orders_orderserver_.orderserver.html#add" class="tsd-kind-icon">add</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_src_orders_orderserver_.orderserver.html#clean" class="tsd-kind-icon">clean</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_src_orders_orderserver_.orderserver.html#get" class="tsd-kind-icon">get</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_src_orders_orderserver_.orderserver.html#remove" class="tsd-kind-icon">remove</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_src_orders_orderserver_.orderserver.html#set" class="tsd-kind-icon">set</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
-			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Constructors</h2>
-				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class">
-					<a name="constructor" class="tsd-anchor"></a>
-					<h3>constructor</h3>
-					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Orders<wbr>Controller<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_src_orders_orders_controller_.orderscontroller.html" class="tsd-signature-type">OrdersController</a></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/rodolpheh/TP-OOC/blob/722383e/app/src/orders/orders.controller.ts#L26">src/orders/orders.controller.ts:26</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-returns-title">Returns <a href="_src_orders_orders_controller_.orderscontroller.html" class="tsd-signature-type">OrdersController</a></h4>
-						</li>
-					</ul>
-				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group ">
+			<section class="tsd-panel-group tsd-member-group tsd-is-private tsd-is-private-protected">
 				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="orderserver" class="tsd-anchor"></a>
-					<h3>order<wbr>Server</h3>
-					<div class="tsd-signature tsd-kind-icon">order<wbr>Server<span class="tsd-signature-symbol">:</span> <a href="_src_orders_orderserver_.orderserver.html" class="tsd-signature-type">OrderServer</a><span class="tsd-signature-symbol"> =&nbsp;new OrderServer()</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="storageaccess" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> storage<wbr>Access</h3>
+					<div class="tsd-signature tsd-kind-icon">storage<wbr>Access<span class="tsd-signature-symbol">:</span> <a href="_src_orders_orderanonymizer_.orderanonymizer.html" class="tsd-signature-type">OrderAnonymizer</a><span class="tsd-signature-symbol"> =&nbsp;new OrderAnonymizer()</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/rodolpheh/TP-OOC/blob/722383e/app/src/orders/orders.controller.ts#L26">src/orders/orders.controller.ts:26</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="path" class="tsd-anchor"></a>
-					<h3>path</h3>
-					<div class="tsd-signature tsd-kind-icon">path<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&quot;/orders&quot;</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/rodolpheh/TP-OOC/blob/722383e/app/src/orders/orders.controller.ts#L24">src/orders/orders.controller.ts:24</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="router" class="tsd-anchor"></a>
-					<h3>router</h3>
-					<div class="tsd-signature tsd-kind-icon">router<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Router</span><span class="tsd-signature-symbol"> =&nbsp;Router()</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/rodolpheh/TP-OOC/blob/722383e/app/src/orders/orders.controller.ts#L25">src/orders/orders.controller.ts:25</a></li>
+							<li>Defined in <a href="https://github.com/rodolpheh/TP-OOC/blob/722383e/app/src/orders/OrderServer.ts#L11">src/orders/OrderServer.ts:11</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -164,143 +122,144 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="create" class="tsd-anchor"></a>
-					<h3>create</h3>
+					<a name="add" class="tsd-anchor"></a>
+					<h3>add</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">create<span class="tsd-signature-symbol">(</span>request<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Request</span>, response<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Response</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">add<span class="tsd-signature-symbol">(</span>data<span class="tsd-signature-symbol">: </span><a href="../interfaces/_src_orders_order_.iorder.html" class="tsd-signature-type">IOrder</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/_src_orders_iorderserver_.iorderserver.html">IOrderServer</a>.<a href="../interfaces/_src_orders_iorderserver_.iorderserver.html#add">add</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/rodolpheh/TP-OOC/blob/722383e/app/src/orders/orders.controller.ts#L58">src/orders/orders.controller.ts:58</a></li>
+									<li>Defined in <a href="https://github.com/rodolpheh/TP-OOC/blob/722383e/app/src/orders/OrderServer.ts#L77">src/orders/OrderServer.ts:77</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Create an entry in the database with the passed data</p>
+									<p>Add an entry to the database</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>request: <span class="tsd-signature-type">Request</span></h5>
-								</li>
-								<li>
-									<h5>response: <span class="tsd-signature-type">Response</span></h5>
+									<h5>data: <a href="../interfaces/_src_orders_order_.iorder.html" class="tsd-signature-type">IOrder</a></h5>
 								</li>
 							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="clean" class="tsd-anchor"></a>
+					<h3>clean</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">clean<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/_src_orders_iorderserver_.iorderserver.html">IOrderServer</a>.<a href="../interfaces/_src_orders_iorderserver_.iorderserver.html#clean">clean</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/rodolpheh/TP-OOC/blob/722383e/app/src/orders/OrderServer.ts#L119">src/orders/OrderServer.ts:119</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Remove all the entries from the database</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="delete" class="tsd-anchor"></a>
-					<h3>delete</h3>
+					<a name="get" class="tsd-anchor"></a>
+					<h3>get</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">delete<span class="tsd-signature-symbol">(</span>request<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Request</span>, response<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Response</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_src_orders_order_.iorder.html" class="tsd-signature-type">IOrder</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/_src_orders_order_.iorder.html" class="tsd-signature-type">IOrder</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/_src_orders_iorderserver_.iorderserver.html">IOrderServer</a>.<a href="../interfaces/_src_orders_iorderserver_.iorderserver.html#get">get</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/rodolpheh/TP-OOC/blob/722383e/app/src/orders/orders.controller.ts#L95">src/orders/orders.controller.ts:95</a></li>
+									<li>Defined in <a href="https://github.com/rodolpheh/TP-OOC/blob/722383e/app/src/orders/OrderServer.ts#L18">src/orders/OrderServer.ts:18</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Delete on or all entries from the list of orders</p>
+									<p>Get an entry from the database. If no id is supplied, returns all the entries.</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>request: <span class="tsd-signature-type">Request</span></h5>
-								</li>
-								<li>
-									<h5>response: <span class="tsd-signature-type">Response</span></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> id: <span class="tsd-signature-type">number</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
-					<a name="initializeroutes" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> initialize<wbr>Routes</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
-						<li class="tsd-signature tsd-kind-icon">initialize<wbr>Routes<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/rodolpheh/TP-OOC/blob/722383e/app/src/orders/orders.controller.ts#L108">src/orders/orders.controller.ts:108</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_src_orders_order_.iorder.html" class="tsd-signature-type">IOrder</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/_src_orders_order_.iorder.html" class="tsd-signature-type">IOrder</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="read" class="tsd-anchor"></a>
-					<h3>read</h3>
+					<a name="remove" class="tsd-anchor"></a>
+					<h3>remove</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">read<span class="tsd-signature-symbol">(</span>request<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Request</span>, response<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Response</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">remove<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/_src_orders_iorderserver_.iorderserver.html">IOrderServer</a>.<a href="../interfaces/_src_orders_iorderserver_.iorderserver.html#remove">remove</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/rodolpheh/TP-OOC/blob/722383e/app/src/orders/orders.controller.ts#L38">src/orders/orders.controller.ts:38</a></li>
+									<li>Defined in <a href="https://github.com/rodolpheh/TP-OOC/blob/722383e/app/src/orders/OrderServer.ts#L97">src/orders/OrderServer.ts:97</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Get one or all entries from the database</p>
+									<p>Remove the entry given by the id</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>request: <span class="tsd-signature-type">Request</span></h5>
-								</li>
-								<li>
-									<h5>response: <span class="tsd-signature-type">Response</span></h5>
+									<h5>id: <span class="tsd-signature-type">number</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="update" class="tsd-anchor"></a>
-					<h3>update</h3>
+					<a name="set" class="tsd-anchor"></a>
+					<h3>set</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">update<span class="tsd-signature-symbol">(</span>request<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Request</span>, response<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Response</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">set<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, data<span class="tsd-signature-symbol">: </span><a href="../interfaces/_src_orders_order_.iorder.html" class="tsd-signature-type">IOrder</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/_src_orders_iorderserver_.iorderserver.html">IOrderServer</a>.<a href="../interfaces/_src_orders_iorderserver_.iorderserver.html#set">set</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/rodolpheh/TP-OOC/blob/722383e/app/src/orders/orders.controller.ts#L77">src/orders/orders.controller.ts:77</a></li>
+									<li>Defined in <a href="https://github.com/rodolpheh/TP-OOC/blob/722383e/app/src/orders/OrderServer.ts#L43">src/orders/OrderServer.ts:43</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Update an entry with the passed data</p>
+									<p>Set the data of the entry given by the id</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>request: <span class="tsd-signature-type">Request</span></h5>
+									<h5>id: <span class="tsd-signature-type">number</span></h5>
 								</li>
 								<li>
-									<h5>response: <span class="tsd-signature-type">Response</span></h5>
+									<h5>data: <a href="../interfaces/_src_orders_order_.iorder.html" class="tsd-signature-type">IOrder</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -327,13 +286,13 @@
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/_src_orders_orderanonymizer_.html">"src/orders/<wbr>Order<wbr>Anonymizer"</a>
 					</li>
-					<li class=" tsd-kind-external-module">
+					<li class="current tsd-kind-external-module">
 						<a href="../modules/_src_orders_orderserver_.html">"src/orders/<wbr>Order<wbr>Server"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/_src_orders_storageaccess_.html">"src/orders/<wbr>Storage<wbr>Access"</a>
 					</li>
-					<li class="current tsd-kind-external-module">
+					<li class=" tsd-kind-external-module">
 						<a href="../modules/_src_orders_orders_controller_.html">"src/orders/orders.controller"</a>
 					</li>
 					<li class="label tsd-is-external">
@@ -349,34 +308,25 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-class tsd-parent-kind-external-module">
-						<a href="_src_orders_orders_controller_.orderscontroller.html" class="tsd-kind-icon">Orders<wbr>Controller</a>
+						<a href="_src_orders_orderserver_.orderserver.html" class="tsd-kind-icon">Order<wbr>Server</a>
 						<ul>
-							<li class=" tsd-kind-constructor tsd-parent-kind-class">
-								<a href="_src_orders_orders_controller_.orderscontroller.html#constructor" class="tsd-kind-icon">constructor</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="_src_orders_orders_controller_.orderscontroller.html#orderserver" class="tsd-kind-icon">order<wbr>Server</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="_src_orders_orders_controller_.orderscontroller.html#path" class="tsd-kind-icon">path</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="_src_orders_orders_controller_.orderscontroller.html#router" class="tsd-kind-icon">router</a>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_src_orders_orderserver_.orderserver.html#storageaccess" class="tsd-kind-icon">storage<wbr>Access</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_src_orders_orders_controller_.orderscontroller.html#create" class="tsd-kind-icon">create</a>
+								<a href="_src_orders_orderserver_.orderserver.html#add" class="tsd-kind-icon">add</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_src_orders_orders_controller_.orderscontroller.html#delete" class="tsd-kind-icon">delete</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
-								<a href="_src_orders_orders_controller_.orderscontroller.html#initializeroutes" class="tsd-kind-icon">initialize<wbr>Routes</a>
+								<a href="_src_orders_orderserver_.orderserver.html#clean" class="tsd-kind-icon">clean</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_src_orders_orders_controller_.orderscontroller.html#read" class="tsd-kind-icon">read</a>
+								<a href="_src_orders_orderserver_.orderserver.html#get" class="tsd-kind-icon">get</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_src_orders_orders_controller_.orderscontroller.html#update" class="tsd-kind-icon">update</a>
+								<a href="_src_orders_orderserver_.orderserver.html#remove" class="tsd-kind-icon">remove</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_src_orders_orderserver_.orderserver.html#set" class="tsd-kind-icon">set</a>
 							</li>
 						</ul>
 					</li>

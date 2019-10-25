@@ -105,4 +105,4 @@ class Order implements IOrder {
 }
 
 export default Order
-export {Order, IOrder}
+export {Order, IOrder, IContact}

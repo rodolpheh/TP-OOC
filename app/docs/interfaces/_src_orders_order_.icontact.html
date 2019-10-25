@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Order | starter-ts-express</title>
+	<title>IContact | starter-ts-express</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -59,10 +59,10 @@
 					<a href="../modules/_src_orders_order_.html">&quot;src/orders/Order&quot;</a>
 				</li>
 				<li>
-					<a href="_src_orders_order_.order.html">Order</a>
+					<a href="_src_orders_order_.icontact.html">IContact</a>
 				</li>
 			</ul>
-			<h1>Class Order</h1>
+			<h1>Interface IContact</h1>
 		</div>
 	</div>
 </header>
@@ -73,122 +73,87 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">Order</span>
+						<span class="target">IContact</span>
 					</li>
-				</ul>
-			</section>
-			<section class="tsd-panel">
-				<h3>Implements</h3>
-				<ul class="tsd-hierarchy">
-					<li><a href="../interfaces/_src_orders_order_.iorder.html" class="tsd-signature-type">IOrder</a></li>
 				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
-						<section class="tsd-index-section ">
-							<h3>Constructors</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="_src_orders_order_.order.html#constructor" class="tsd-kind-icon">constructor</a></li>
-							</ul>
-						</section>
-						<section class="tsd-index-section ">
+						<section class="tsd-index-section tsd-is-not-exported">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_src_orders_order_.order.html#carrier" class="tsd-kind-icon">carrier</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_src_orders_order_.order.html#contact" class="tsd-kind-icon">contact</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_src_orders_order_.order.html#createdat" class="tsd-kind-icon">created<wbr>At</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_src_orders_order_.order.html#id" class="tsd-kind-icon">id</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_src_orders_order_.order.html#packages" class="tsd-kind-icon">packages</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="_src_orders_order_.icontact.html#billingaddress" class="tsd-kind-icon">billing<wbr>Address</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="_src_orders_order_.icontact.html#deliveryaddress" class="tsd-kind-icon">delivery<wbr>Address</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="_src_orders_order_.icontact.html#firstname" class="tsd-kind-icon">firstname</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="_src_orders_order_.icontact.html#lastname" class="tsd-kind-icon">lastname</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="_src_orders_order_.icontact.html#mail" class="tsd-kind-icon">mail</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="_src_orders_order_.icontact.html#phone" class="tsd-kind-icon">phone</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
-			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Constructors</h2>
-				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class">
-					<a name="constructor" class="tsd-anchor"></a>
-					<h3>constructor</h3>
-					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Order<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, orderData<span class="tsd-signature-symbol">: </span><a href="../interfaces/_src_orders_order_.iorder.html" class="tsd-signature-type">IOrder</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_src_orders_order_.order.html" class="tsd-signature-type">Order</a></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/rodolpheh/TP-OOC/blob/722383e/app/src/orders/Order.ts#L96">src/orders/Order.ts:96</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>id: <span class="tsd-signature-type">number</span></h5>
-								</li>
-								<li>
-									<h5>orderData: <a href="../interfaces/_src_orders_order_.iorder.html" class="tsd-signature-type">IOrder</a></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="_src_orders_order_.order.html" class="tsd-signature-type">Order</a></h4>
-						</li>
-					</ul>
-				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group ">
+			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
 				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="carrier" class="tsd-anchor"></a>
-					<h3>carrier</h3>
-					<div class="tsd-signature tsd-kind-icon">carrier<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_src_orders_order_.icarrier.html" class="tsd-signature-type">ICarrier</a></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+					<a name="billingaddress" class="tsd-anchor"></a>
+					<h3>billing<wbr>Address</h3>
+					<div class="tsd-signature tsd-kind-icon">billing<wbr>Address<span class="tsd-signature-symbol">:</span> <a href="_src_orders_order_.ibillingaddress.html" class="tsd-signature-type">IBillingAddress</a></div>
 					<aside class="tsd-sources">
-						<p>Implementation of <a href="../interfaces/_src_orders_order_.iorder.html">IOrder</a>.<a href="../interfaces/_src_orders_order_.iorder.html#carrier">carrier</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/rodolpheh/TP-OOC/blob/722383e/app/src/orders/Order.ts#L95">src/orders/Order.ts:95</a></li>
+							<li>Defined in <a href="https://github.com/rodolpheh/TP-OOC/blob/722383e/app/src/orders/Order.ts#L59">src/orders/Order.ts:59</a></li>
 						</ul>
 					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="contact" class="tsd-anchor"></a>
-					<h3>contact</h3>
-					<div class="tsd-signature tsd-kind-icon">contact<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_src_orders_order_.icontact.html" class="tsd-signature-type">IContact</a></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+					<a name="deliveryaddress" class="tsd-anchor"></a>
+					<h3>delivery<wbr>Address</h3>
+					<div class="tsd-signature tsd-kind-icon">delivery<wbr>Address<span class="tsd-signature-symbol">:</span> <a href="_src_orders_order_.ideliveryaddress.html" class="tsd-signature-type">IDeliveryAddress</a></div>
 					<aside class="tsd-sources">
-						<p>Implementation of <a href="../interfaces/_src_orders_order_.iorder.html">IOrder</a>.<a href="../interfaces/_src_orders_order_.iorder.html#contact">contact</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/rodolpheh/TP-OOC/blob/722383e/app/src/orders/Order.ts#L94">src/orders/Order.ts:94</a></li>
+							<li>Defined in <a href="https://github.com/rodolpheh/TP-OOC/blob/722383e/app/src/orders/Order.ts#L60">src/orders/Order.ts:60</a></li>
 						</ul>
 					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="createdat" class="tsd-anchor"></a>
-					<h3>created<wbr>At</h3>
-					<div class="tsd-signature tsd-kind-icon">created<wbr>At<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+					<a name="firstname" class="tsd-anchor"></a>
+					<h3>firstname</h3>
+					<div class="tsd-signature tsd-kind-icon">firstname<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
-						<p>Implementation of <a href="../interfaces/_src_orders_order_.iorder.html">IOrder</a>.<a href="../interfaces/_src_orders_order_.iorder.html#createdat">createdAt</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/rodolpheh/TP-OOC/blob/722383e/app/src/orders/Order.ts#L92">src/orders/Order.ts:92</a></li>
+							<li>Defined in <a href="https://github.com/rodolpheh/TP-OOC/blob/722383e/app/src/orders/Order.ts#L55">src/orders/Order.ts:55</a></li>
 						</ul>
 					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="id" class="tsd-anchor"></a>
-					<h3>id</h3>
-					<div class="tsd-signature tsd-kind-icon">id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+					<a name="lastname" class="tsd-anchor"></a>
+					<h3>lastname</h3>
+					<div class="tsd-signature tsd-kind-icon">lastname<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
-						<p>Implementation of <a href="../interfaces/_src_orders_order_.iorder.html">IOrder</a>.<a href="../interfaces/_src_orders_order_.iorder.html#id">id</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/rodolpheh/TP-OOC/blob/722383e/app/src/orders/Order.ts#L96">src/orders/Order.ts:96</a></li>
+							<li>Defined in <a href="https://github.com/rodolpheh/TP-OOC/blob/722383e/app/src/orders/Order.ts#L56">src/orders/Order.ts:56</a></li>
 						</ul>
 					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="packages" class="tsd-anchor"></a>
-					<h3>packages</h3>
-					<div class="tsd-signature tsd-kind-icon">packages<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_src_orders_order_.ipackage.html" class="tsd-signature-type">IPackage</a><span class="tsd-signature-symbol">[]</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+					<a name="mail" class="tsd-anchor"></a>
+					<h3>mail</h3>
+					<div class="tsd-signature tsd-kind-icon">mail<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
-						<p>Implementation of <a href="../interfaces/_src_orders_order_.iorder.html">IOrder</a>.<a href="../interfaces/_src_orders_order_.iorder.html#packages">packages</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/rodolpheh/TP-OOC/blob/722383e/app/src/orders/Order.ts#L93">src/orders/Order.ts:93</a></li>
+							<li>Defined in <a href="https://github.com/rodolpheh/TP-OOC/blob/722383e/app/src/orders/Order.ts#L58">src/orders/Order.ts:58</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+					<a name="phone" class="tsd-anchor"></a>
+					<h3>phone</h3>
+					<div class="tsd-signature tsd-kind-icon">phone<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/rodolpheh/TP-OOC/blob/722383e/app/src/orders/Order.ts#L57">src/orders/Order.ts:57</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -234,71 +199,71 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="../classes/_src_orders_order_.order.html" class="tsd-kind-icon">Order</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_src_orders_order_.ibillingaddress.html" class="tsd-kind-icon">IBilling<wbr>Address</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_src_orders_order_.icarrier.html" class="tsd-kind-icon">ICarrier</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_src_orders_order_.icarriercontact.html" class="tsd-kind-icon">ICarrier<wbr>Contact</a>
+					</li>
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-class tsd-parent-kind-external-module">
-						<a href="_src_orders_order_.order.html" class="tsd-kind-icon">Order</a>
+					<li class="current tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_src_orders_order_.icontact.html" class="tsd-kind-icon">IContact</a>
 						<ul>
-							<li class=" tsd-kind-constructor tsd-parent-kind-class">
-								<a href="_src_orders_order_.order.html#constructor" class="tsd-kind-icon">constructor</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+								<a href="_src_orders_order_.icontact.html#billingaddress" class="tsd-kind-icon">billing<wbr>Address</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="_src_orders_order_.order.html#carrier" class="tsd-kind-icon">carrier</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+								<a href="_src_orders_order_.icontact.html#deliveryaddress" class="tsd-kind-icon">delivery<wbr>Address</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="_src_orders_order_.order.html#contact" class="tsd-kind-icon">contact</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+								<a href="_src_orders_order_.icontact.html#firstname" class="tsd-kind-icon">firstname</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="_src_orders_order_.order.html#createdat" class="tsd-kind-icon">created<wbr>At</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+								<a href="_src_orders_order_.icontact.html#lastname" class="tsd-kind-icon">lastname</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="_src_orders_order_.order.html#id" class="tsd-kind-icon">id</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+								<a href="_src_orders_order_.icontact.html#mail" class="tsd-kind-icon">mail</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="_src_orders_order_.order.html#packages" class="tsd-kind-icon">packages</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+								<a href="_src_orders_order_.icontact.html#phone" class="tsd-kind-icon">phone</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="../interfaces/_src_orders_order_.ibillingaddress.html" class="tsd-kind-icon">IBilling<wbr>Address</a>
+						<a href="_src_orders_order_.ideliveryaddress.html" class="tsd-kind-icon">IDelivery<wbr>Address</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="../interfaces/_src_orders_order_.icarrier.html" class="tsd-kind-icon">ICarrier</a>
+						<a href="_src_orders_order_.iheadofficeaddress.html" class="tsd-kind-icon">IHead<wbr>Office<wbr>Address</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="../interfaces/_src_orders_order_.icarriercontact.html" class="tsd-kind-icon">ICarrier<wbr>Contact</a>
+						<a href="_src_orders_order_.iheight.html" class="tsd-kind-icon">IHeight</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="../interfaces/_src_orders_order_.icontact.html" class="tsd-kind-icon">IContact</a>
+						<a href="_src_orders_order_.ilength.html" class="tsd-kind-icon">ILength</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="../interfaces/_src_orders_order_.ideliveryaddress.html" class="tsd-kind-icon">IDelivery<wbr>Address</a>
+						<a href="_src_orders_order_.iorder.html" class="tsd-kind-icon">IOrder</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="../interfaces/_src_orders_order_.iheadofficeaddress.html" class="tsd-kind-icon">IHead<wbr>Office<wbr>Address</a>
+						<a href="_src_orders_order_.ipackage.html" class="tsd-kind-icon">IPackage</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="../interfaces/_src_orders_order_.iheight.html" class="tsd-kind-icon">IHeight</a>
+						<a href="_src_orders_order_.iproduct.html" class="tsd-kind-icon">IProduct</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="../interfaces/_src_orders_order_.ilength.html" class="tsd-kind-icon">ILength</a>
+						<a href="_src_orders_order_.iweight.html" class="tsd-kind-icon">IWeight</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="../interfaces/_src_orders_order_.iorder.html" class="tsd-kind-icon">IOrder</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="../interfaces/_src_orders_order_.ipackage.html" class="tsd-kind-icon">IPackage</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="../interfaces/_src_orders_order_.iproduct.html" class="tsd-kind-icon">IProduct</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="../interfaces/_src_orders_order_.iweight.html" class="tsd-kind-icon">IWeight</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="../interfaces/_src_orders_order_.iwidth.html" class="tsd-kind-icon">IWidth</a>
+						<a href="_src_orders_order_.iwidth.html" class="tsd-kind-icon">IWidth</a>
 					</li>
 				</ul>
 			</nav>

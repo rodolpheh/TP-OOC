@@ -3,12 +3,12 @@ import {
   Order,
 } from './Order'
 
-import {
-  StorageAccess,
-} from './StorageAccess'
+import IOrderServer from './IOrderServer'
 
-class OrderServer {
-  private storageAccess: StorageAccess<IOrder> = new StorageAccess<IOrder>('orders')
+import OrderAnonymizer from './OrderAnonymizer'
+
+class OrderServer implements IOrderServer {
+  private storageAccess: OrderAnonymizer = new OrderAnonymizer()
 
   /**
    * Get an entry from the database. If no id is supplied, returns all the entries.
