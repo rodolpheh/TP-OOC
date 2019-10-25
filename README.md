@@ -17,6 +17,9 @@ This is a practical work for the class of Object-Oriented Concepts at ISEN Lille
 3. To seperate the service part from the HTTP part, we need to respect the single-responsibility principle. We'll use a light implementation of the `Repository Pattern`, with the `StorageAccess` accessing and mapping the data to real objects, and the `OrderServer` handling all the business logic.
 4. To anonymize our contact data, we'll use the `Proxy Pattern`. By adding an `IStorageAccess` interface to our `StorageAccess`, we will allow the creation of a new class `OrderAnonymizer` that will implements `IStorageAccess` and will replace `storageAccess` in our `OrderServer` class. `OrderAnonymizer` itself is just calling an `AccessStorage` object except for the `get()` function where it will alterate the data to remove contacts informations.
 5. I don't see much to do here, I don't really want my `Order` class to manage the Redis connection, it seems to make no sense.
+6. See below for the class diagram
+
+![Class diagram](app/classes.png)
 
 ---
 

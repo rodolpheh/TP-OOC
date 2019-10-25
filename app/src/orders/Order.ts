@@ -105,4 +105,17 @@ class Order implements IOrder {
 }
 
 export default Order
-export {Order, IOrder, IContact}
+export {
+    Order,
+    IOrder,
+    IContact,
+    ICarrier,
+    ICarrierContact,
+    IBillingAddress,
+    IHeight,
+    ILength,
+    IPackage,
+    IProduct,
+    IWeight,
+    IWidth,
+}
