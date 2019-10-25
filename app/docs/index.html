@@ -81,6 +81,9 @@
 				</a>
 				<ol>
 					<li>For this exercise, I chose to write a RESTful-compliant API. It is a little bit dirty but commented. I&#39;ll leave more room for improvements in the next exercises.</li>
+					<li>To compose this model, we need to respect the interface segregation principle. We can describe the data with a bunch of interfaces nested into each other.</li>
+					<li>To seperate the service part from the HTTP part, we need to respect the single-responsibility principle. We&#39;ll use a light implementation of the <code>Repository Pattern</code>, with the <code>StorageAccess</code> accessing and mapping the data to real objects, and the <code>OrderServer</code> handling all the business logic.</li>
+					<li>To anonymize our contact data, we&#39;ll use the <code>Adapter Pattern</code>. By adding an <code>IStorageAccess</code> interface to our <code>StorageAccess</code>, we will allow the creation of a new class <code>OrderAnonymizer</code> that will implements <code>IStorageAccess</code> and will replace <code>storageAccess</code> in our <code>OrderServer</code> class. <code>OrderAnonymizer</code> itself is just calling an <code>AccessStorage</code> object except for the <code>get()</code> function where it will alterate the data to remove contacts informations.</li>
 				</ol>
 				<hr>
 				<a href="#get-started" id="get-started" style="color: inherit; text-decoration: none;">
@@ -125,7 +128,22 @@
 						<span>Internals</span>
 					</li>
 					<li class=" tsd-kind-external-module">
+						<a href="modules/_src_orders_iorderserver_.html">"src/orders/IOrder<wbr>Server"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_src_orders_istorageaccess_.html">"src/orders/IStorage<wbr>Access"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
 						<a href="modules/_src_orders_order_.html">"src/orders/<wbr>Order"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_src_orders_orderanonymizer_.html">"src/orders/<wbr>Order<wbr>Anonymizer"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_src_orders_orderserver_.html">"src/orders/<wbr>Order<wbr>Server"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_src_orders_storageaccess_.html">"src/orders/<wbr>Storage<wbr>Access"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="modules/_src_orders_orders_controller_.html">"src/orders/orders.controller"</a>

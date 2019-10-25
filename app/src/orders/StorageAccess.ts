@@ -2,7 +2,9 @@ import {
   delAsync, getAsync, setAsync,
 } from '../../utils/storage'
 
-class StorageAccess<T> {
+import IStorageAccess from './IStorageAccess'
+
+class StorageAccess<T> implements IStorageAccess<T> {
   private field: string
 
   constructor(field: string) {
@@ -19,7 +21,7 @@ class StorageAccess<T> {
   }
 
   /**
-   * Set the entry from the Redis database with an array of T[]
+   * Set the entry from the Redis database with an array of T
    * @param   data
    * @returns
    */

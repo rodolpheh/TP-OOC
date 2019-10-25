@@ -15,6 +15,7 @@ This is a practical work for the class of Object-Oriented Concepts at ISEN Lille
 1. For this exercise, I chose to write a RESTful-compliant API. It is a little bit dirty but commented. I'll leave more room for improvements in the next exercises.
 2. To compose this model, we need to respect the interface segregation principle. We can describe the data with a bunch of interfaces nested into each other.
 3. To seperate the service part from the HTTP part, we need to respect the single-responsibility principle. We'll use a light implementation of the `Repository Pattern`, with the `StorageAccess` accessing and mapping the data to real objects, and the `OrderServer` handling all the business logic.
+4. To anonymize our contact data, we'll use the `Proxy Pattern`. By adding an `IStorageAccess` interface to our `StorageAccess`, we will allow the creation of a new class `OrderAnonymizer` that will implements `IStorageAccess` and will replace `storageAccess` in our `OrderServer` class. `OrderAnonymizer` itself is just calling an `AccessStorage` object except for the `get()` function where it will alterate the data to remove contacts informations.
 
 ---
 

@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>&quot;utils/storage&quot; | starter-ts-express</title>
+	<title>IBillingAddress | starter-ts-express</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,71 +56,82 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="_utils_storage_.html">&quot;utils/storage&quot;</a>
+					<a href="../modules/_src_orders_order_.html">&quot;src/orders/Order&quot;</a>
+				</li>
+				<li>
+					<a href="_src_orders_order_.ibillingaddress.html">IBillingAddress</a>
 				</li>
 			</ul>
-			<h1>External module &quot;utils/storage&quot;</h1>
+			<h1>Interface IBillingAddress</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="target">IBillingAddress</span>
+					</li>
+				</ul>
+			</section>
 			<section class="tsd-panel-group tsd-index-group">
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
-						<section class="tsd-index-section tsd-is-external tsd-is-not-exported">
-							<h3>Variables</h3>
+						<section class="tsd-index-section tsd-is-not-exported">
+							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-external tsd-is-not-exported"><a href="_utils_storage_.html#client" class="tsd-kind-icon">client</a></li>
-								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-external tsd-is-not-exported"><a href="_utils_storage_.html#delasync" class="tsd-kind-icon">del<wbr>Async</a></li>
-								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-external tsd-is-not-exported"><a href="_utils_storage_.html#getasync" class="tsd-kind-icon">get<wbr>Async</a></li>
-								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-external tsd-is-not-exported"><a href="_utils_storage_.html#setasync" class="tsd-kind-icon">set<wbr>Async</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="_src_orders_order_.ibillingaddress.html#addressline1" class="tsd-kind-icon">address<wbr>Line1</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="_src_orders_order_.ibillingaddress.html#addressline2" class="tsd-kind-icon">address<wbr>Line2</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="_src_orders_order_.ibillingaddress.html#city" class="tsd-kind-icon">city</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="_src_orders_order_.ibillingaddress.html#postalcode" class="tsd-kind-icon">postal<wbr>Code</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
-			<section class="tsd-panel-group tsd-member-group tsd-is-external tsd-is-not-exported">
-				<h2>Variables</h2>
-				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module tsd-is-external tsd-is-not-exported">
-					<a name="client" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> client</h3>
-					<div class="tsd-signature tsd-kind-icon">client<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">RedisClient</span><span class="tsd-signature-symbol"> =&nbsp;createClient(6379, &#x27;redis&#x27;)</span></div>
+			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+					<a name="addressline1" class="tsd-anchor"></a>
+					<h3>address<wbr>Line1</h3>
+					<div class="tsd-signature tsd-kind-icon">address<wbr>Line1<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/rodolpheh/TP-OOC/blob/722383e/app/utils/storage.ts#L5">utils/storage.ts:5</a></li>
+							<li>Defined in <a href="https://github.com/rodolpheh/TP-OOC/blob/722383e/app/src/orders/Order.ts#L43">src/orders/Order.ts:43</a></li>
 						</ul>
 					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module tsd-is-external tsd-is-not-exported">
-					<a name="delasync" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> del<wbr>Async</h3>
-					<div class="tsd-signature tsd-kind-icon">del<wbr>Async<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> =&nbsp;promisify(client.del).bind(client)</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+					<a name="addressline2" class="tsd-anchor"></a>
+					<h3>address<wbr>Line2</h3>
+					<div class="tsd-signature tsd-kind-icon">address<wbr>Line2<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/rodolpheh/TP-OOC/blob/722383e/app/utils/storage.ts#L17">utils/storage.ts:17</a></li>
+							<li>Defined in <a href="https://github.com/rodolpheh/TP-OOC/blob/722383e/app/src/orders/Order.ts#L44">src/orders/Order.ts:44</a></li>
 						</ul>
 					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module tsd-is-external tsd-is-not-exported">
-					<a name="getasync" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> get<wbr>Async</h3>
-					<div class="tsd-signature tsd-kind-icon">get<wbr>Async<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> =&nbsp;promisify(client.get).bind(client)</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+					<a name="city" class="tsd-anchor"></a>
+					<h3>city</h3>
+					<div class="tsd-signature tsd-kind-icon">city<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/rodolpheh/TP-OOC/blob/722383e/app/utils/storage.ts#L15">utils/storage.ts:15</a></li>
+							<li>Defined in <a href="https://github.com/rodolpheh/TP-OOC/blob/722383e/app/src/orders/Order.ts#L42">src/orders/Order.ts:42</a></li>
 						</ul>
 					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module tsd-is-external tsd-is-not-exported">
-					<a name="setasync" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> set<wbr>Async</h3>
-					<div class="tsd-signature tsd-kind-icon">set<wbr>Async<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> =&nbsp;promisify(client.set).bind(client)</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+					<a name="postalcode" class="tsd-anchor"></a>
+					<h3>postal<wbr>Code</h3>
+					<div class="tsd-signature tsd-kind-icon">postal<wbr>Code<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/rodolpheh/TP-OOC/blob/722383e/app/utils/storage.ts#L16">utils/storage.ts:16</a></li>
+							<li>Defined in <a href="https://github.com/rodolpheh/TP-OOC/blob/722383e/app/src/orders/Order.ts#L41">src/orders/Order.ts:41</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -136,47 +147,95 @@
 						<span>Internals</span>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="_src_orders_iorderserver_.html">"src/orders/IOrder<wbr>Server"</a>
+						<a href="../modules/_src_orders_iorderserver_.html">"src/orders/IOrder<wbr>Server"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="_src_orders_istorageaccess_.html">"src/orders/IStorage<wbr>Access"</a>
+						<a href="../modules/_src_orders_istorageaccess_.html">"src/orders/IStorage<wbr>Access"</a>
+					</li>
+					<li class="current tsd-kind-external-module">
+						<a href="../modules/_src_orders_order_.html">"src/orders/<wbr>Order"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="_src_orders_order_.html">"src/orders/<wbr>Order"</a>
+						<a href="../modules/_src_orders_orderanonymizer_.html">"src/orders/<wbr>Order<wbr>Anonymizer"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="_src_orders_orderanonymizer_.html">"src/orders/<wbr>Order<wbr>Anonymizer"</a>
+						<a href="../modules/_src_orders_orderserver_.html">"src/orders/<wbr>Order<wbr>Server"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="_src_orders_orderserver_.html">"src/orders/<wbr>Order<wbr>Server"</a>
+						<a href="../modules/_src_orders_storageaccess_.html">"src/orders/<wbr>Storage<wbr>Access"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="_src_orders_storageaccess_.html">"src/orders/<wbr>Storage<wbr>Access"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="_src_orders_orders_controller_.html">"src/orders/orders.controller"</a>
+						<a href="../modules/_src_orders_orders_controller_.html">"src/orders/orders.controller"</a>
 					</li>
 					<li class="label tsd-is-external">
 						<span>Externals</span>
 					</li>
-					<li class="current tsd-kind-external-module tsd-is-external">
-						<a href="_utils_storage_.html">"utils/storage"</a>
+					<li class=" tsd-kind-external-module tsd-is-external">
+						<a href="../modules/_utils_storage_.html">"utils/storage"</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-external tsd-is-not-exported">
-						<a href="_utils_storage_.html#client" class="tsd-kind-icon">client</a>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="../classes/_src_orders_order_.order.html" class="tsd-kind-icon">Order</a>
 					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-external tsd-is-not-exported">
-						<a href="_utils_storage_.html#delasync" class="tsd-kind-icon">del<wbr>Async</a>
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_src_orders_order_.ibillingaddress.html" class="tsd-kind-icon">IBilling<wbr>Address</a>
+						<ul>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+								<a href="_src_orders_order_.ibillingaddress.html#addressline1" class="tsd-kind-icon">address<wbr>Line1</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+								<a href="_src_orders_order_.ibillingaddress.html#addressline2" class="tsd-kind-icon">address<wbr>Line2</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+								<a href="_src_orders_order_.ibillingaddress.html#city" class="tsd-kind-icon">city</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+								<a href="_src_orders_order_.ibillingaddress.html#postalcode" class="tsd-kind-icon">postal<wbr>Code</a>
+							</li>
+						</ul>
 					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-external tsd-is-not-exported">
-						<a href="_utils_storage_.html#getasync" class="tsd-kind-icon">get<wbr>Async</a>
+				</ul>
+				<ul class="after-current">
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_src_orders_order_.icarrier.html" class="tsd-kind-icon">ICarrier</a>
 					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-external tsd-is-not-exported">
-						<a href="_utils_storage_.html#setasync" class="tsd-kind-icon">set<wbr>Async</a>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_src_orders_order_.icarriercontact.html" class="tsd-kind-icon">ICarrier<wbr>Contact</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_src_orders_order_.icontact.html" class="tsd-kind-icon">IContact</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_src_orders_order_.ideliveryaddress.html" class="tsd-kind-icon">IDelivery<wbr>Address</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_src_orders_order_.iheadofficeaddress.html" class="tsd-kind-icon">IHead<wbr>Office<wbr>Address</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_src_orders_order_.iheight.html" class="tsd-kind-icon">IHeight</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_src_orders_order_.ilength.html" class="tsd-kind-icon">ILength</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_src_orders_order_.iorder.html" class="tsd-kind-icon">IOrder</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_src_orders_order_.ipackage.html" class="tsd-kind-icon">IPackage</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_src_orders_order_.iproduct.html" class="tsd-kind-icon">IProduct</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_src_orders_order_.iweight.html" class="tsd-kind-icon">IWeight</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_src_orders_order_.iwidth.html" class="tsd-kind-icon">IWidth</a>
 					</li>
 				</ul>
 			</nav>
